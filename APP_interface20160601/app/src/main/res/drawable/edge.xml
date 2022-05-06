@@ -1,0 +1,25 @@
+<?xml version ="1.0" encoding ="utf-8"?><!--  Learn More about how to use App Actions: https://developer.android.com/guide/actions/index.html -->
+<layer-list xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:andorid="http://schemas.android.com/apk/res-auto">
+<item>
+    <shape>
+        <solid android:color="#ffffff">
+        </solid>
+    </shape>
+</item>
+<item tools:ignore="ExtraText">
+    android:right="1dp"
+    android:left="1dp"
+    android:top="1dp"
+    android:bottom="1dp"
+    <shape>
+        <solid andorid:color="#ffffff" /> <!-- 此為背景顏色 -->
+        <padding
+            andorid:bottom="10dp"
+            andorid:left="10dp"
+            andorid:top="10dp"
+            andorid:right="10dp" />
+    </shape>
+</item>
+</layer-list>

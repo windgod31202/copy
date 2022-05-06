@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="以下是註冊畫面" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/Icon"
+                android:layout_width="match_parent"
+                android:layout_height="224dp"
+                app:srcCompat="@drawable/ic_baseline_hotel_24" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="47dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/contry"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:background="#A0A0A0"
+                android:text="國籍別:" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="下拉式選單" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:background="#A0A0A0"
+                android:text="會員帳號:" />
+
+            <EditText
+                android:id="@+id/editTextNumber"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:text="請輸入手機號碼"
+                android:textColor="#B0B0B0"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextNumber4"
+            android:layout_width="286dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="32dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"
+            android:text="請輸入電子信箱"
+            android:gravity="center"
+            android:textColor="#B0B0B0"/>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:background="#A0A0A0"
+                android:text="會員密碼:" />
+
+            <EditText
+                android:id="@+id/editTextNumber2"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:background="#A0A0A0"
+                android:text="出生日期:" />
+
+            <EditText
+                android:id="@+id/editTextNumber3"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/clear"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="清除重填"
+                android:layout_gravity="bottom"
+                android:background="@drawable/shape_retangle"
+                android:layout_marginRight="30dp"/>
+
+            <Button
+                android:id="@+id/sent"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="確認送出"
+                android:layout_gravity="bottom"
+                android:background="@drawable/shape_retangle"
+                android:layout_marginLeft="30dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

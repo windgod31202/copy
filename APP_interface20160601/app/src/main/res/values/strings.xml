@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">APP_interface20160601</string>
+    <string-array name="CountryName">
+        <item>Taiwan</item>
+        <item>American</item>
+        <item>Japan</item>
+        <item>Korea</item>
+    </string-array>
+
+</resources>
